@@ -10,7 +10,7 @@ plugins:
 # Look & feel
 minimal_mistakes_skin: default
 locale: en
-logo: /assets/img/avatar.png   # optional; add an image later
+logo: /assets/img/tree.webp   # optional; add an image later
 breadcrumbs: true
 search: false
 
