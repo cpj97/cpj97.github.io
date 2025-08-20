@@ -12,7 +12,7 @@ minimal_mistakes_skin: default
 locale: en
 logo: /assets/img/avatar.png   # optional; add an image later
 breadcrumbs: true
-search: true
+search: false
 
 # Collections (optional later)
 # collections:
