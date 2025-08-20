@@ -26,20 +26,18 @@ include:
 author:
   name: "Camilo Pedraza Jiménez"
   avatar: "/assets/img/yo_zoom.png"   # optional
-  bio: "PhD researcher in [field]. Interests: [keywords]."
-  location: "[City, Country]"
+  bio: "PhD researcher in Computational Social Science. Interests: Sustainable Development, ."
+  location: "Berlin, Germany/Bogota, Colombia"
   links:
     - label: "Email"
       icon: "fas fa-envelope"
-      url: "mailto:your.email@uni.edu"
-    - label: "Google Scholar"
-      icon: "ai ai-google-scholar"   # will render as text if icon not found; ok
-      url: "https://scholar.google.com/"
+      url: "mailto:C.Pedraza-Jimenez@phd.hertie-school.org"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/camilo-pedraza-jim%C3%A9nez-67257a182/"
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/cpj97"
-    - label: "Twitter"
-      icon: "fab fa-x-twitter"
-      url: "https://twitter.com/"
+
 
 # Navigation (points to _data/navigation.yml)

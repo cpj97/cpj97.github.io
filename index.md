@@ -15,4 +15,4 @@ My work focuses on **computational social science**, using machine learning, cau
 - September 2025 — PhD Researcher at the Hertie School.
 - July 2025 — Research Assistant at RWI Essen.
 
-> Looking for my CV? You’ll find it on the CV page, and projects & datasets on the Projects page.
+> Special thanks to [Sofía García-Durrer][https://www.linkedin.com/in/sofia-garcia-durrer/] for the profile pic!
