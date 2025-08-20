@@ -25,7 +25,7 @@ include:
 
 author:
   name: "Camilo Pedraza Jiménez"
-  avatar: "/assets/img/yo.png"   # optional
+  avatar: "/assets/img/yo_zoom.png"   # optional
   bio: "PhD researcher in [field]. Interests: [keywords]."
   location: "[City, Country]"
   links:
