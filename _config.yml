@@ -1,0 +1,45 @@
+title: "Camilo Pedraza Jiménez"
+name: "Camilo Pedraza Jiménez"
+description: "PhD researcher – [your field/department/university]"
+url: "https://cpj97.github.io"
+# Minimal Mistakes via remote theme (no local Ruby needed on GitHub)
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+plugins:
+  - jekyll-include-cache
+
+# Look & feel
+minimal_mistakes_skin: default
+locale: en
+logo: /assets/img/avatar.png   # optional; add an image later
+breadcrumbs: true
+search: true
+
+# Collections (optional later)
+# collections:
+#   posts:
+#     output: true
+#     permalink: /blog/:title/
+
+include:
+  - _pages
+
+author:
+  name: "Camilo Pedraza Jiménez"
+  avatar: "/assets/img/avatar.png"   # optional
+  bio: "PhD researcher in [field]. Interests: [keywords]."
+  location: "[City, Country]"
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:your.email@uni.edu"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"   # will render as text if icon not found; ok
+      url: "https://scholar.google.com/"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/cpj97"
+    - label: "Twitter"
+      icon: "fab fa-x-twitter"
+      url: "https://twitter.com/"
+
+# Navigation (points to _data/navigation.yml)
