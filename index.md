@@ -9,7 +9,6 @@ I’m **Camilo Pedraza Jiménez**, a PhD researcher in computational social scie
 My research uses quantitative methods to study deforestation and agricultural development in Colombia, with an eye to practical policy impact and sustainability. Outside work, you’ll find me bouldering, exploring nature, or enjoying the city life.
 
 - **Methods:** Machine Learning, Causal Inference, Geospatial Analysis.
-- **Affiliations:** Hertie School, RWI Essen
 - **Contact:** C.Pedraza-Jimenez@phd.hertie-school.org
 
 ### Current Positions
