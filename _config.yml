@@ -26,8 +26,10 @@ include:
 author:
   name: "Camilo Pedraza Jiménez"
   avatar: "/assets/img/yo_zoom.png"   # optional
-  bio: "PhD researcher in Computational Social Science. Interests: Sustainable Development, ."
-  location: "Berlin, Germany/Bogota, Colombia"
+  bio: |
+    PhD researcher in Computational Social Science.
+    **Interests:** Sustainable Development, Quantitative Research.
+  location: "Berlin & Bogota"
   links:
     - label: "Email"
       icon: "fas fa-envelope"

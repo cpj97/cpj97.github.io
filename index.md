@@ -1,13 +1,14 @@
 ---
 layout: single
 author_profile: true
-title: "Welcome"
+title: "Welcome to my personal website!"
 ---
 
-Hi! I’m **Camilo Pedraza Jiménez**, a PhD researcher at the **Hertie School**.  
-My work focuses on **computational social science**, using machine learning, causal inference and geospatial analysis to study deforestation and agricultural development in Colombia.
+I’m **Camilo Pedraza Jiménez**, a PhD researcher in computational social science at the **Hertie School**. With a background bridging public policy and data, I enjoy turning messy real-world questions into clean, testable evidence.
 
-- **Interests:** Sustainable Development, Quantitative Research, Bouldering
+My research uses quantitative methods to study deforestation and agricultural development in Colombia, with an eye to practical policy impact and sustainability. Outside work, you’ll find me bouldering, exploring nature, or enjoying the city life.
+
+- **Methods:** Machine Learning, Causal Inference, Geospatial Analysis.
 - **Affiliations:** Hertie School, RWI Essen
 - **Contact:** C.Pedraza-Jimenez@phd.hertie-school.org
 
