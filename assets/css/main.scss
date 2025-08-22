@@ -27,3 +27,11 @@ $right-sidebar-width: 360px;
     width: calc(100% - 340px - 60px); /* 60px ≈ gutter; adjust if needed */
   }
 }
+
+/* Softer, cardy look for grid entries */
+.archive__item {
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  padding-bottom: .5rem;
+}
+.archive__item-teaser img { border-radius: 12px 12px 0 0; }
