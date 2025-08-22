@@ -14,11 +14,22 @@ logo: /assets/img/tree.webp   # optional; add an image later
 breadcrumbs: true
 search: false
 
-# Collections (optional later)
-# collections:
-#   posts:
-#     output: true
-#     permalink: /blog/:title/
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      share: false
+      comments: false
+
 
 include:
   - _pages
@@ -28,7 +39,7 @@ author:
   avatar: "/assets/img/yo_zoom.png"   # optional
   bio: |
     PhD researcher in Computational Social Science.
-    
+
     **Interests:** Sustainable Development, Quantitative Research.
   location: "Berlin & Bogota"
   links:

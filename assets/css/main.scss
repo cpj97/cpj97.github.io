@@ -1,5 +1,8 @@
 ---
 ---
+/* Set both sidebars wider */
+$left-sidebar-width: 360px;
+$right-sidebar-width: 360px;
 
 @charset "utf-8";
 
@@ -9,8 +12,8 @@
 
 /* --- Your overrides --- */
 .author__avatar img {
-  width: 140px;      /* try 140–180px */
-  max-width: 140px;
+  width: 200px;      /* try 140–180px */
+  max-width: 200px;
 }
 
 /* Wider left sidebar (desktop only) */

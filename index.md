@@ -1,7 +1,7 @@
 ---
 layout: single
 author_profile: true
-title: "Who am I?"
+title: "This is me"
 ---
 
 I’m **Camilo Pedraza Jiménez**, a PhD researcher in computational social science at the **Hertie School**. With a background bridging public policy and data, I enjoy turning messy real-world questions into clean, testable evidence.
