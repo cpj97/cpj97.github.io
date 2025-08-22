@@ -12,3 +12,15 @@
   width: 140px;      /* try 140–180px */
   max-width: 140px;
 }
+
+/* Wider left sidebar (desktop only) */
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 340px;        /* tweak: 320–360px works well */
+    max-width: 340px;
+  }
+  /* keep content aligned after widening the sidebar */
+  .page__content {
+    width: calc(100% - 340px - 60px); /* 60px ≈ gutter; adjust if needed */
+  }
+}
