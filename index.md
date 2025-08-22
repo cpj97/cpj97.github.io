@@ -12,7 +12,7 @@ My research uses quantitative methods to study deforestation and agricultural de
 - **Contact:** C.Pedraza-Jimenez@phd.hertie-school.org
 
 ### Current Positions
-- September 2025 — PhD Researcher at the Hertie School.
-- July 2025 — Research Assistant at RWI Essen.
+- September 2025 — PhD Researcher at the [Hertie School](https://www.hertie-school.org/en/).
+- July 2025 — Research Assistant at [RWI Essen](https://www.rwi-essen.de/en/).
 
 > Special thanks to [Sofía García-Durrer](https://www.linkedin.com/in/sofia-garcia-durrer/) for the profile pic!
