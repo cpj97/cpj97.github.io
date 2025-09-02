@@ -65,3 +65,5 @@ $right-sidebar-width: 360px;
 
 /* Keep buttons at the bottom */
 .projects .feature__item .btn{ margin-top: auto; }
+
+.projects .feature__item{ width:auto !important; max-width:none !important; }
