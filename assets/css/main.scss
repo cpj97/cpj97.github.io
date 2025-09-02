@@ -18,39 +18,39 @@ $right-sidebar-width: 360px;
 
 /* Projects: responsive 1–2 columns + equal-height cards */
 .projects .feature__wrapper {
-  display: grid;
+  display: grid !important;                          /* override theme flex */
   gap: 1.25rem;
-  /* At most 2 columns; each card never smaller than 340px.
-     If the container is narrower, it will fall back to 1 column. */
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  align-items: stretch;
 }
 
 .projects .feature__item {
-  display: flex;              /* equal-height cards */
+  display: flex;                                     /* equal-height card */
   flex-direction: column;
-  min-width: 0;               /* prevent text overflow squashing */
+  min-width: 0;                                      /* prevents squish/ellipsis */
   height: 100%;
   border-radius: 14px;
-  box-shadow: 0 10px 28px rgba(51, 51, 51, 0.63);
+  box-shadow: 0 10px 28px rgba(0,0,0,.06);
   padding: .75rem 1rem 1rem;
 }
 
-/* Consistent image area at top of each card */
+/* Uniform teaser image area */
 .projects .feature__item .archive__item-teaser img {
   width: 100%;
-  height: 200px;              /* tweak 160–220px to taste */
+  height: 200px;                                     /* adjust 160–220px */
   object-fit: cover;
   border-radius: 10px;
 }
 
-/* Let long titles wrap normally (no clipping) */
+/* Let long titles wrap instead of clipping */
 .projects .feature__item .archive__item-title {
-  overflow: visible;
   white-space: normal;
-  text-overflow: clip;
+  overflow: visible;
+  text-overflow: unset;
+  overflow-wrap: anywhere;                            /* break long words if needed */
 }
 
-/* Pin buttons at the bottom so text length doesn’t change card height */
+/* Keep button(s) pinned to the bottom */
 .projects .feature__item .btn {
   margin-top: auto;
   align-self: flex-start;
