@@ -7,34 +7,44 @@ toc: false
 
 # Card data (you can add more items to this list)
 projects_cards:
-  - image_path: /assets/img/projects/rag-shot.png
-    alt: "Local RAG UI"
-    title: "Local LLM RAG System"
-    excerpt: "Qwen2 (0.6B, 4-bit) + Gradio UI for document Q&A. Panel to inspect retrieved sources."
-    url: "https://github.com/<your-username>/<your-rag-repo>"
-    btn_label: "View on GitHub"
+  - image_path: /assets/img/projects/splitter.png
+    alt: "Splitter App"
+    title: "Debt Settlement App"
+    excerpt: "Full-stack web app for tracking and settling debts between users."
+    url: "https://elena3er.pythonanywhere.com/"
+    btn_label: "View Prototype"
     btn_class: "btn--primary"
-    more_url: "/projects/local-rag/"        # link to the full write-up (optional)
+    more_url: "/projects/splitter-app/"
     more_label: "Read details"
 
-  - image_path: /assets/img/projects/saopaulo-maps.png
-    alt: "Maps of police lethality"
-    title: "Geospatial Analysis of Police Lethality in São Paulo"
-    excerpt: "Census + mortality microdata; LISA clusters; spatial lag/error SAR models."
-    url: "https://github.com/<your-username>/<your-saopaulo-repo>"
-    btn_label: "View on GitHub"
-    btn_class: "btn--primary"
-    more_url: "/projects/police-saopaulo/"
-    more_label: "Read details"
-
-  - image_path: /assets/img/projects/bnn-plot.png
+  - image_path: /assets/img/projects/uncertainty.png
     alt: "BNN predictive intervals"
     title: "Modelling Uncertainty with Bayesian Neural Networks"
-    excerpt: "Tutorial + case study showing predictive intervals vs point estimates."
-    url: "https://github.com/<your-username>/<your-bnn-repo>"
+    excerpt: "Tutorial and implementation of BNNs  a focus on uncertainty in the context of energy demand forecasting."
+    url: "https://github.com/hertie-data-science-lab/tutorial-group_4"
     btn_label: "View on GitHub"
     btn_class: "btn--primary"
     more_url: "/projects/bnn-uncertainty/"
+    more_label: "Read details"
+
+  - image_path: /assets/img/projects/liar.png
+    alt: "LIAR Topic"
+    title: "LDA topic modeling on fake news detection"
+    excerpt: "Application of LDT topic modeling on fake news detection using the LIAR dataset."
+    url: "https://github.com/cpj97/LIAR_topics"
+    btn_label: "View on GitHub"
+    btn_class: "btn--primary"
+    more_url: "/projects/liar-topic/"
+    more_label: "Read details"
+
+  - image_path: /assets/img/projects/bayesian.png
+    alt: "Bayesian Modeling"
+    title: "Hierarchical Bayesian Approach to undestrand violence in Colombia"
+    excerpt: "Research on the relationship between ecomoic development violence in Colombia using a hierarchical Bayesian model."
+    url: "https://github.com/cpj97/bayesian_modeling"
+    btn_label: "View on GitHub"
+    btn_class: "btn--primary"
+    more_url: "/projects/bayesian-modeling/"
     more_label: "Read details"
 ---
 

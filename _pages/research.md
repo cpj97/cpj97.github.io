@@ -5,8 +5,8 @@ permalink: /research/
 ---
 
 ## Theses  
-1. **Master's in Data Science:** *Seeing the Forest through the Trees: Exploring Deforestation Trends in Colombia with Machine Learning*. (Hertie School, 2025).
-2. **Master's in Public Policy:** *A Forest Call: Impact Evaluation of the Colombian Peace Agreement from 2016 on Deforestation*. (Hertie School, 2024).
+1. **Master's in Data Science:** *Seeing the Forest through the Trees: Exploring Deforestation Trends in Colombia with Machine Learning*. (Hertie School, 2025). [Poster](/assets/docs/MDS_thesis.pdf) · [Code](https://github.com/cpj97/MDS_thesis)
+2. **Master's in Public Policy:** *A Forest Call: Impact Evaluation of the Colombian Peace Agreement from 2016 on Deforestation*. (Hertie School, 2024). [Poster](/assets/docs/MPP_thesis.pdf) · [Code](https://github.com/Milton0215/MPP_thesis)
 
 ## Research agenda (TBD)
 - Measuring **deforestation drivers** and agricultural change with administrative, satellite, and survey data.
