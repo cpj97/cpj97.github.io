@@ -12,3 +12,20 @@ permalink: /research/
 - Measuring **deforestation drivers** and agricultural change with administrative, satellite, and survey data.
 - **Causal inference** for policy impacts.
 - **Geospatial ML** for forecasting and targeting interventions.
+
+
+{% comment %}
+## Papers in progress
+1. **Working title** (with Coauthor). _Method/setting._ Abstract in 2–3 lines.
+
+## Working papers
+1. **Title** (Year). [PDF](/assets/docs/paper1.pdf) · [Code](https://github.com/yourrepo)
+
+## Publications
+1. **Title** (Year). *Journal*. [Publisher] · [Preprint](/assets/docs/pub1.pdf)
+
+{% endcomment %}
+
+{% include feature_row id="projects_cards" %}
+
+
