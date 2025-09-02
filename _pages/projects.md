@@ -2,12 +2,12 @@
 layout: single
 title: "Projects"
 permalink: /projects/
-classes: wide
+classes: wide projects
 toc: false
 
 # Card data (you can add more items to this list)
 projects_cards:
-  - image_path: /assets/img/projects/splitter.png
+  - image_path: /assets/img/splitter.png
     alt: "Splitter App"
     title: "Debt Settlement App"
     excerpt: "Full-stack web app for tracking and settling debts between users."
@@ -17,7 +17,7 @@ projects_cards:
     more_url: "/projects/splitter-app/"
     more_label: "Read details"
 
-  - image_path: /assets/img/projects/uncertainty.png
+  - image_path: /assets/img/uncertainty.png
     alt: "BNN predictive intervals"
     title: "Modelling Uncertainty with Bayesian Neural Networks"
     excerpt: "Tutorial and implementation of BNNs  a focus on uncertainty in the context of energy demand forecasting."
@@ -27,7 +27,7 @@ projects_cards:
     more_url: "/projects/bnn-uncertainty/"
     more_label: "Read details"
 
-  - image_path: /assets/img/projects/liar.png
+  - image_path: /assets/img/liar.png
     alt: "LIAR Topic"
     title: "LDA topic modeling on fake news detection"
     excerpt: "Application of LDT topic modeling on fake news detection using the LIAR dataset."
@@ -37,7 +37,7 @@ projects_cards:
     more_url: "/projects/liar-topic/"
     more_label: "Read details"
 
-  - image_path: /assets/img/projects/bayesian.png
+  - image_path: /assets/img/bayesian.png
     alt: "Bayesian Modeling"
     title: "Hierarchical Bayesian Approach to undestrand violence in Colombia"
     excerpt: "Research on the relationship between ecomoic development violence in Colombia using a hierarchical Bayesian model."
