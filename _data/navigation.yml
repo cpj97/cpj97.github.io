@@ -1,7 +1,9 @@
 main:
-  - title: "Research"
-    url: /research/
+  - title: "Publications & Research"
+    url: /publications_research/
   - title: "Projects"
     url: /projects/
   - title: "CV"
     url: /cv/
+  - title: "Teaching"
+    url: /teaching/

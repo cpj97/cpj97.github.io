@@ -1,8 +1,11 @@
 ---
 layout: single
-title: "Research"
-permalink: /research/
+title: "Publications & Research"
+permalink: /publications_research/
 ---
+
+## Publications
+1. **COVID-19 Policy Environment and the Importance of Health Economy in Latin America** (2022). *WifOR Institute. Report for FIFARMA*. [Report](https://www.wifor.com/uploads/2022/06/WifOR_FIFARMA_Report.pdf)
 
 ## Theses  
 1. **Master's in Data Science:** *Seeing the Forest through the Trees: Exploring Deforestation Trends in Colombia with Machine Learning*. (Hertie School, 2025). [Poster](/assets/docs/MDS_thesis.pdf) · [Code](https://github.com/cpj97/MDS_thesis)
