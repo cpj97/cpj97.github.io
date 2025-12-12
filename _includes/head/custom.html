@@ -5,13 +5,11 @@
 <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
 
 <script>
-  // Load saved theme
   document.addEventListener("DOMContentLoaded", function () {
     const saved = localStorage.getItem("theme") || "light";
     document.body.classList.add("theme-" + saved);
   });
 
-  // Toggle function
   function toggleTheme() {
     const body = document.body;
 
@@ -26,4 +24,5 @@
     }
   }
 </script>
+
 

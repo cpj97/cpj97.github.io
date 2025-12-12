@@ -3,7 +3,6 @@ layout: single
 author_profile: true
 title: "This is me"
 ---
-
 <button
   type="button"
   class="theme-toggle"
