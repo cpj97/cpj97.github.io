@@ -6,23 +6,38 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    // 1. Apply saved theme on load
     const saved = localStorage.getItem("theme") || "light";
     document.body.classList.add("theme-" + saved);
-  });
 
-  function toggleTheme() {
-    const body = document.body;
+    // 2. Wire up the toggle element (no inline onclick)
+    const toggle = document.querySelector(".theme-toggle");
+    if (!toggle) return;
 
-    if (body.classList.contains("theme-dark")) {
-      body.classList.remove("theme-dark");
-      body.classList.add("theme-light");
-      localStorage.setItem("theme", "light");
-    } else {
-      body.classList.remove("theme-light");
-      body.classList.add("theme-dark");
-      localStorage.setItem("theme", "dark");
+    function flipTheme() {
+      const body = document.body;
+      const isDark = body.classList.contains("theme-dark");
+
+      if (isDark) {
+        body.classList.remove("theme-dark");
+        body.classList.add("theme-light");
+        localStorage.setItem("theme", "light");
+      } else {
+        body.classList.remove("theme-light");
+        body.classList.add("theme-dark");
+        localStorage.setItem("theme", "dark");
+      }
     }
-  }
+
+    toggle.addEventListener("click", flipTheme);
+    toggle.addEventListener("keypress", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        flipTheme();
+      }
+    });
+  });
 </script>
+
 
 

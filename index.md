@@ -3,18 +3,19 @@ layout: single
 author_profile: true
 title: "This is me"
 ---
-<button
-  type="button"
+<div
   class="theme-toggle"
+  role="button"
   aria-label="Toggle dark mode"
-  onclick="toggleTheme()"
+  tabindex="0"
 >
   <span class="theme-toggle__track">
     <span class="theme-toggle__thumb"></span>
     <span class="theme-toggle__icon theme-toggle__icon--moon">🌙</span>
     <span class="theme-toggle__icon theme-toggle__icon--sun">☀️</span>
   </span>
-</button>
+</div>
+
 
 I’m **Camilo Pedraza Jiménez**, a PhD researcher in computational social science at the **Hertie School**. With a background bridging public policy and data, I enjoy turning messy real-world questions into clean, testable evidence.
 
