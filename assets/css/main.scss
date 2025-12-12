@@ -72,79 +72,90 @@ $right-sidebar-width: 360px;
    MANUAL THEME SWITCH — Light / Dark styles
    --------------------------------------------------- */
 
-/* Default = light theme */
-body.theme-light {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Dark theme */
-body.theme-dark {
-  background-color: #020617;
-  color: #e5e7eb;
-}
-
-/* Links */
-body.theme-dark a,
-body.theme-dark a:visited {
-  color: #93c5fd;
-}
-
-body.theme-dark a:hover {
-  color: #bfdbfe;
-}
-
-/* Project cards */
-body.theme-dark .projects .feature__item {
-  background-color: #0f172a;
-  color: #e5e7eb;
-  box-shadow: 0 10px 28px rgba(0,0,0,0.75);
-}
-
-/* Header, sidebar, footer */
-body.theme-dark .masthead,
-body.theme-dark .sidebar,
-body.theme-dark .page__footer {
-  background-color: #020617;
-  color: #e5e7eb;
-}
-
-/* Floating theme toggle button */
+/* Pill-style theme toggle */
 .theme-toggle {
-  position: fixed;
-  top: 0.8rem;
-  right: 1.5rem;
-  z-index: 999;              /* above everything */
+  border: none;
+  background: transparent;
+  padding: 0;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin: 1rem 0;
+}
 
-  background: #f9fafb;
-  border: 1px solid #d1d5db;
-  padding: 4px 10px;
+/* Track */
+.theme-toggle__track {
+  position: relative;
+  width: 52px;
+  height: 28px;
   border-radius: 999px;
-  font-size: 0.85rem;
+  background: #facc15; /* golden yellow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
 }
 
-/* Match button to dark theme */
-body.theme-dark .theme-toggle {
-  background: #020617;
-  border-color: #4b5563;
-  color: #e5e7eb;
+/* Moving circle */
+.theme-toggle__thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #f9fafb;
+  transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
+/* Icons */
+.theme-toggle__icon {
+  font-size: 0.9rem;
+  z-index: 1;
+}
+
+.theme-toggle__icon--moon {
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.theme-toggle__icon--sun {
+  opacity: 0.5;
+  transition: opacity 0.25s ease;
+}
+
+/* Dark mode state for toggle */
+body.theme-dark .theme-toggle__thumb {
+  transform: translateX(24px);
+  background-color: #0f172a;
+}
+
+body.theme-dark .theme-toggle__icon--moon {
+  opacity: 0.5;
+}
+
+body.theme-dark .theme-toggle__icon--sun {
+  opacity: 1;
+}
 
 /* Dark mode for header + nav links */
 body.theme-dark .masthead {
   background-color: #020617;
-  border-bottom-color: #0b1120;  /* subtle border, optional */
+  border-bottom-color: #0b1120;
 }
 
-/* Navigation links in the top bar */
 body.theme-dark .greedy-nav a,
 body.theme-dark .masthead__menu-item > a {
-  color: #bfdbfe;              /* light blue */
+  color: #bfdbfe;
 }
 
 body.theme-dark .greedy-nav a:hover,
 body.theme-dark .masthead__menu-item > a:hover {
-  color: #e5e7eb;              /* almost white on hover */
+  color: #e5e7eb;
+}
+
+/* Optional: light header in light mode */
+body.theme-light .masthead {
+  background-color: #ffffff;
 }

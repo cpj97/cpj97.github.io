@@ -3,8 +3,18 @@ layout: single
 author_profile: true
 title: "This is me"
 ---
-<button onclick="toggleTheme()" class="theme-toggle">
-  Toggle Theme
+
+<button
+  type="button"
+  class="theme-toggle"
+  aria-label="Toggle dark mode"
+  onclick="toggleTheme()"
+>
+  <span class="theme-toggle__track">
+    <span class="theme-toggle__thumb"></span>
+    <span class="theme-toggle__icon theme-toggle__icon--moon">🌙</span>
+    <span class="theme-toggle__icon theme-toggle__icon--sun">☀️</span>
+  </span>
 </button>
 
 I’m **Camilo Pedraza Jiménez**, a PhD researcher in computational social science at the **Hertie School**. With a background bridging public policy and data, I enjoy turning messy real-world questions into clean, testable evidence.
@@ -20,6 +30,3 @@ My research uses quantitative methods to study deforestation and agricultural de
 
 > Special thanks to [Sofía García-Durrer](https://www.linkedin.com/in/sofia-garcia-durrer/) for the profile pic!
 
-<button onclick="toggleTheme()" class="theme-toggle">
-  Toggle Theme
-</button>
