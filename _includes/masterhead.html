@@ -17,6 +17,10 @@
               <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {%- endfor -%}
+          <!-- Dark mode toggle as a “fake” menu item -->
+            <li class="masthead__menu-item masthead__menu-item--toggle">
+                {% include dark-mode-toggle.html %}
+            </li>
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
@@ -28,8 +32,7 @@
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
         </button>
-        <ul class="hidden-links hidden"></ul>
-        {% include dark-mode-toggle.html %}
+        <ul class="hidden-links hidden"></ul>        
       </nav>
     </div>
   </div>

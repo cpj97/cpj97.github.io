@@ -1,8 +1,17 @@
 ---
 ---
+
+/* -------------------------------------------------
+   Layout variables (set BEFORE importing theme)
+   ------------------------------------------------- */
+
 /* Set both sidebars wider */
 $left-sidebar-width: 360px;
 $right-sidebar-width: 360px;
+
+/* -------------------------------------------------
+   Load Minimal Mistakes theme
+   ------------------------------------------------- */
 
 @charset "utf-8";
 
@@ -10,43 +19,47 @@ $right-sidebar-width: 360px;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* --- Your overrides --- */
+/* -------------------------------------------------
+   Avatar + projects grid overrides
+   ------------------------------------------------- */
+
+/* Bigger author avatar */
 .author__avatar img {
-  width: 200px;      /* try 140–180px */
+  width: 200px;
   max-width: 200px;
 }
 
 /* Grid: 1 col on mobile, 2 wide cols on desktop */
-.projects .feature__wrapper{
+.projects .feature__wrapper {
   display: grid !important;
   gap: 1.25rem;
-  grid-template-columns: 1fr;              /* phone */
+  grid-template-columns: 1fr;          /* phone */
   align-items: stretch;
-  grid-auto-rows: 1fr;                      /* equal row heights */
-  max-width: 1200px;                        /* avoid ultra-wide page making thin cards */
-  margin-inline: auto;                      /* center the grid */
-  justify-content: center;                  /* prevent space-between look */
+  grid-auto-rows: 1fr;                 /* equal row heights */
+  max-width: 1200px;                   /* avoid ultra-wide page */
+  margin-inline: auto;                 /* center the grid */
+  justify-content: center;             /* prevent space-between look */
 }
 
-@media (min-width: 900px){
-  .projects .feature__wrapper{
+@media (min-width: 900px) {
+  .projects .feature__wrapper {
     grid-template-columns: repeat(2, minmax(420px, 1fr)); /* nice, wide cards */
   }
 }
 
 /* Card fills its grid cell */
-.projects .feature__item{
+.projects .feature__item {
   display: flex;
   flex-direction: column;
   height: 100%;
   min-width: 0;
   border-radius: 14px;
   box-shadow: 0 10px 28px rgba(49, 48, 48, 0.681);
-  padding: .75rem 1rem 1rem;
+  padding: 0.75rem 1rem 1rem;
 }
 
 /* Uniform teaser image */
-.projects .feature__item .archive__item-teaser img{
+.projects .feature__item .archive__item-teaser img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -54,7 +67,7 @@ $right-sidebar-width: 360px;
 }
 
 /* Title wrapping (no mid-word letter breaks) */
-.projects .feature__item .archive__item-title{
+.projects .feature__item .archive__item-title {
   white-space: normal;
   overflow: visible;
   text-overflow: unset;
@@ -64,15 +77,105 @@ $right-sidebar-width: 360px;
 }
 
 /* Keep buttons at the bottom */
-.projects .feature__item .btn{ margin-top: auto; }
+.projects .feature__item .btn {
+  margin-top: auto;
+}
 
-.projects .feature__item{ width:auto !important; max-width:none !important; }
+.projects .feature__item {
+  width: auto !important;
+  max-width: none !important;
+}
 
-/* ---------------------------------------------------
-   MANUAL THEME SWITCH — Light / Dark styles
-   --------------------------------------------------- */
+/* -------------------------------------------------
+   Light / Dark theme base styles
+   ------------------------------------------------- */
 
-/* Pill-style theme toggle */
+/* Base background + text colour */
+body.theme-light {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+body.theme-dark {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+/* Main content area */
+body.theme-dark .page,
+body.theme-dark .page__inner-wrap,
+body.theme-dark .page__content {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+/* Sidebar + footer */
+body.theme-dark .sidebar,
+body.theme-dark .page__footer {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+/* Links inside content */
+body.theme-dark .page__content a {
+  color: #93c5fd;
+}
+
+body.theme-dark .page__content a:hover {
+  color: #bfdbfe;
+}
+
+/* Blockquotes */
+body.theme-dark blockquote {
+  border-left-color: #4b5563;
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+/* Projects cards in dark mode */
+body.theme-dark .projects .feature__item {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75);
+}
+
+/* Header + nav in dark/light mode */
+body.theme-dark .masthead {
+  background-color: #020617;
+  border-bottom-color: #0b1120;
+}
+
+body.theme-light .masthead {
+  background-color: #ffffff;
+}
+
+body.theme-dark .greedy-nav a,
+body.theme-dark .masthead__menu-item > a {
+  color: #bfdbfe;
+}
+
+body.theme-dark .greedy-nav a:hover,
+body.theme-dark .masthead__menu-item > a:hover {
+  color: #e5e7eb;
+}
+
+/* -------------------------------------------------
+   Nav layout (make room for toggle)
+   ------------------------------------------------- */
+
+.greedy-nav {
+  display: flex;
+  align-items: center;
+}
+
+.greedy-nav .visible-links {
+  flex: 1; /* links take left space, toggle sits on the right */
+}
+
+/* -------------------------------------------------
+   Pill-style theme toggle (in masthead)
+   ------------------------------------------------- */
+
 .theme-toggle {
   border: none;
   background: transparent;
@@ -80,7 +183,7 @@ $right-sidebar-width: 360px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  margin: 1rem 0;
+  margin-left: 1.5rem; /* space from last nav item */
 }
 
 /* Track */
@@ -139,38 +242,9 @@ body.theme-dark .theme-toggle__icon--sun {
   opacity: 1;
 }
 
-/* Dark mode for header + nav links */
-body.theme-dark .masthead {
-  background-color: #020617;
-  border-bottom-color: #0b1120;
+/* Small screens: keep spacing modest */
+@media (max-width: 600px) {
+  .theme-toggle {
+    margin-left: 0.75rem;
+  }
 }
-
-body.theme-dark .greedy-nav a,
-body.theme-dark .masthead__menu-item > a {
-  color: #bfdbfe;
-}
-
-body.theme-dark .greedy-nav a:hover,
-body.theme-dark .masthead__menu-item > a:hover {
-  color: #e5e7eb;
-}
-
-/* Optional: light header in light mode */
-body.theme-light .masthead {
-  background-color: #ffffff;
-}
-
-/* Put the pill nicely on the right side of the nav */
-.greedy-nav {
-  display: flex;
-  align-items: center;
-}
-
-.greedy-nav .visible-links {
-  flex: 1;                /* links take the left space */
-}
-
-.theme-toggle {
-  margin-left: 1.5rem;    /* space from last nav item */
-}
-
