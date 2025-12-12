@@ -11,8 +11,6 @@ title: "This is me"
 >
   <span class="theme-toggle__track">
     <span class="theme-toggle__thumb"></span>
-    <span class="theme-toggle__icon theme-toggle__icon--moon">🌙</span>
-    <span class="theme-toggle__icon theme-toggle__icon--sun">☀️</span>
   </span>
 </div>
 
