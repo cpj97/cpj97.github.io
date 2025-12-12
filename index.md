@@ -3,8 +3,8 @@ layout: single
 author_profile: true
 title: "This is me"
 ---
-<button onclick="toggleTheme()" style="margin-left:1rem;">
-  🌙 / ☀️
+<button onclick="toggleTheme()" class="theme-toggle">
+  Toggle Theme
 </button>
 
 I’m **Camilo Pedraza Jiménez**, a PhD researcher in computational social science at the **Hertie School**. With a background bridging public policy and data, I enjoy turning messy real-world questions into clean, testable evidence.
@@ -19,3 +19,7 @@ My research uses quantitative methods to study deforestation and agricultural de
 - July 2025 — Research Assistant at [RWI Essen](https://www.rwi-essen.de/en/).
 
 > Special thanks to [Sofía García-Durrer](https://www.linkedin.com/in/sofia-garcia-durrer/) for the profile pic!
+
+<button onclick="toggleTheme()" class="theme-toggle">
+  Toggle Theme
+</button>

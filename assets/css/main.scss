@@ -109,18 +109,42 @@ body.theme-dark .page__footer {
   color: #e5e7eb;
 }
 
-/* Dark table styles, blockquotes, etc. if you want */
-
+/* Floating theme toggle button */
 .theme-toggle {
+  position: fixed;
+  top: 0.8rem;
+  right: 1.5rem;
+  z-index: 999;              /* above everything */
   cursor: pointer;
-  background: none;
-  border: 1px solid #ccc;
+
+  background: #f9fafb;
+  border: 1px solid #d1d5db;
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 0.85rem;
 }
 
+/* Match button to dark theme */
 body.theme-dark .theme-toggle {
-  border-color: #666;
+  background: #020617;
+  border-color: #4b5563;
   color: #e5e7eb;
+}
+
+
+/* Dark mode for header + nav links */
+body.theme-dark .masthead {
+  background-color: #020617;
+  border-bottom-color: #0b1120;  /* subtle border, optional */
+}
+
+/* Navigation links in the top bar */
+body.theme-dark .greedy-nav a,
+body.theme-dark .masthead__menu-item > a {
+  color: #bfdbfe;              /* light blue */
+}
+
+body.theme-dark .greedy-nav a:hover,
+body.theme-dark .masthead__menu-item > a:hover {
+  color: #e5e7eb;              /* almost white on hover */
 }
