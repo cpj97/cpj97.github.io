@@ -159,3 +159,18 @@ body.theme-dark .masthead__menu-item > a:hover {
 body.theme-light .masthead {
   background-color: #ffffff;
 }
+
+/* Put the pill nicely on the right side of the nav */
+.greedy-nav {
+  display: flex;
+  align-items: center;
+}
+
+.greedy-nav .visible-links {
+  flex: 1;                /* links take the left space */
+}
+
+.theme-toggle {
+  margin-left: 1.5rem;    /* space from last nav item */
+}
+

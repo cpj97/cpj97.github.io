@@ -3,18 +3,6 @@ layout: single
 author_profile: true
 title: "This is me"
 ---
-<div
-  class="theme-toggle"
-  role="button"
-  aria-label="Toggle dark mode"
-  tabindex="0"
->
-  <span class="theme-toggle__track">
-    <span class="theme-toggle__thumb"></span>
-  </span>
-</div>
-
-
 I’m **Camilo Pedraza Jiménez**, a PhD researcher in computational social science at the **Hertie School**. With a background bridging public policy and data, I enjoy turning messy real-world questions into clean, testable evidence.
 
 My research uses quantitative methods to study deforestation and agricultural development in Colombia, with an eye to practical policy impact and sustainability. Outside work, you’ll find me bouldering, exploring nature, or enjoying the city life.
