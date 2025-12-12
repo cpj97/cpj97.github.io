@@ -67,3 +67,47 @@ $right-sidebar-width: 360px;
 .projects .feature__item .btn{ margin-top: auto; }
 
 .projects .feature__item{ width:auto !important; max-width:none !important; }
+
+/* --- Dark mode overrides (auto: prefers-color-scheme) --- */
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: #020617;   /* dark background */
+    color: #e5e7eb;              /* light text */
+  }
+
+  /* Main content area */
+  .page,
+  .page__inner-wrap,
+  .archive__item,
+  .page__content {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  /* Sidebar, header, footer */
+  .masthead,
+  .sidebar,
+  .page__footer {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  /* Links */
+  a,
+  a:visited {
+    color: #93c5fd;
+  }
+
+  a:hover {
+    color: #bfdbfe;
+  }
+
+  /* Cards in your projects grid */
+  .projects .feature__item {
+    background-color: #020617;
+    color: #e5e7eb;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75);
+  }
+}
