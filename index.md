@@ -12,11 +12,6 @@ My current research focuses on deforestation and agricultural change in Colombia
 
 ### Current Positions
 - September 2025 - PhD Researcher at the [Hertie School](https://www.hertie-school.org/en/).
-- July 2025 - Research Assistant at [RWI Essen](https://www.rwi-essen.de/en/).
-
-### Selected Work
-- [Publications & Research](/publications_research/) - publications, theses, and current research agenda.
-- [Projects](/projects/) - applied data science, machine learning, and web development work.
-- [CV](/cv/) - web CV and downloadable PDF.
+- January 2026 - Teaching Assistant at the [Hertie School].
 
 > Special thanks to [Sof&iacute;a Garc&iacute;a-Durrer](https://www.linkedin.com/in/sofia-garcia-durrer/) for the profile pic!
