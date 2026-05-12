@@ -1,18 +1,22 @@
 ---
 layout: single
 author_profile: true
-title: "This is me"
+title: "Camilo Pedraza Jimenez"
 ---
-I’m **Camilo Pedraza Jiménez**, a PhD researcher in computational social science at the **Hertie School**. With a background bridging public policy and data, I enjoy turning messy real-world questions into clean, testable evidence.
+I&rsquo;m **Camilo Pedraza Jim&eacute;nez**, a PhD researcher in computational social science at the **Hertie School**. I work at the intersection of public policy, data science, and sustainability, using quantitative tools to study how land use, agricultural development, and institutions shape environmental outcomes.
 
-My research uses quantitative methods to study deforestation and agricultural development in Colombia, with an eye to practical policy impact and sustainability. Outside work, you’ll find me bouldering, exploring nature, or enjoying the city life.
+My current research focuses on deforestation and agricultural change in Colombia, with an eye to practical policy impact. I am especially interested in causal inference, geospatial machine learning, and turning messy real-world data into clean, testable evidence.
 
-- **Methods:** Machine Learning, Causal Inference, Geospatial Analysis.
-- **Contact:** C.Pedraza-Jimenez@phd.hertie-school.org
+- **Methods:** Machine learning, causal inference, geospatial analysis.
+- **Contact:** [C.Pedraza-Jimenez@phd.hertie-school.org](mailto:C.Pedraza-Jimenez@phd.hertie-school.org)
 
 ### Current Positions
-- September 2025 — PhD Researcher at the [Hertie School](https://www.hertie-school.org/en/).
-- July 2025 — Research Assistant at [RWI Essen](https://www.rwi-essen.de/en/).
+- September 2025 - PhD Researcher at the [Hertie School](https://www.hertie-school.org/en/).
+- July 2025 - Research Assistant at [RWI Essen](https://www.rwi-essen.de/en/).
 
-> Special thanks to [Sofía García-Durrer](https://www.linkedin.com/in/sofia-garcia-durrer/) for the profile pic!
+### Selected Work
+- [Publications & Research](/publications_research/) - publications, theses, and current research agenda.
+- [Projects](/projects/) - applied data science, machine learning, and web development work.
+- [CV](/cv/) - web CV and downloadable PDF.
 
+> Special thanks to [Sof&iacute;a Garc&iacute;a-Durrer](https://www.linkedin.com/in/sofia-garcia-durrer/) for the profile pic!

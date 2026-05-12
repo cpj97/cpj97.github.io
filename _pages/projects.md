@@ -5,12 +5,11 @@ permalink: /projects/
 classes: wide projects
 toc: false
 
-# Card data (you can add more items to this list)
 projects_cards:
   - image_path: /assets/img/splitter.png
     alt: "Splitter App"
     title: "Debt Settlement App"
-    excerpt: "Full-stack web app for tracking and settling debts between users."
+    excerpt: "Full-stack prototype for tracking shared expenses, calculating balances, and simplifying debt settlement between users."
     url: "https://elena3er.pythonanywhere.com/"
     btn_label: "View Prototype"
     btn_class: "btn--primary"
@@ -20,7 +19,7 @@ projects_cards:
   - image_path: /assets/img/uncertainty.png
     alt: "BNN predictive intervals"
     title: "Modelling Uncertainty with Bayesian Neural Networks"
-    excerpt: "Tutorial and implementation of BNNs  a focus on uncertainty in the context of energy demand forecasting."
+    excerpt: "Tutorial and implementation of Bayesian neural networks, with a focus on predictive uncertainty in energy demand forecasting."
     url: "https://github.com/hertie-data-science-lab/tutorial-group_4"
     btn_label: "View on GitHub"
     btn_class: "btn--primary"
@@ -28,9 +27,9 @@ projects_cards:
     more_label: "Read details"
 
   - image_path: /assets/img/liar.png
-    alt: "LIAR Topic"
-    title: "LDA topic modeling on fake news detection"
-    excerpt: "Application of LDT topic modeling on fake news detection using the LIAR dataset."
+    alt: "LIAR topic modeling"
+    title: "LDA Topic Modeling for Fake News Detection"
+    excerpt: "Application of LDA topic modeling to the LIAR dataset to explore how themes and language patterns relate to fact-checking labels."
     url: "https://github.com/cpj97/LIAR_topics"
     btn_label: "View on GitHub"
     btn_class: "btn--primary"
@@ -38,9 +37,9 @@ projects_cards:
     more_label: "Read details"
 
   - image_path: /assets/img/bayesian.png
-    alt: "Bayesian Modeling"
-    title: "Hierarchical Bayesian Approach to undestrand violence in Colombia"
-    excerpt: "Research on the relationship between ecomoic development violence in Colombia using a hierarchical Bayesian model."
+    alt: "Bayesian modeling"
+    title: "Hierarchical Bayesian Modeling of Violence in Colombia"
+    excerpt: "Research on the relationship between economic development and violence in Colombia using hierarchical Bayesian models."
     url: "https://github.com/cpj97/bayesian_modeling"
     btn_label: "View on GitHub"
     btn_class: "btn--primary"
@@ -48,10 +47,6 @@ projects_cards:
     more_label: "Read details"
 ---
 
-{% comment %}
-Renders a 3-across card row using the list above.
-Each card shows an image (screenshot), title, short text, a GitHub button,
-and (optionally) a “Read details” button to the project page.
-{% endcomment %}
+Selected applied work across data science, causal inference, Bayesian modeling, and web development.
 
 {% include feature_row id="projects_cards" %}

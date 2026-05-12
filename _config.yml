@@ -1,16 +1,15 @@
-title: "Camilo Pedraza Jiménez"
-name: "Camilo Pedraza Jiménez"
-description: "PhD researcher – [your field/department/university]"
+title: "Camilo Pedraza Jim&eacute;nez"
+name: "Camilo Pedraza Jim&eacute;nez"
+description: "PhD researcher in computational social science, public policy, and environmental data science."
 url: "https://cpj97.github.io"
-# Minimal Mistakes via remote theme (no local Ruby needed on GitHub)
+
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-include-cache
 
-# Look & feel
 minimal_mistakes_skin: default
 locale: en
-logo: /assets/img/tree.webp   # optional; add an image later
+logo: /assets/img/tree.webp
 breadcrumbs: true
 search: false
 
@@ -30,13 +29,12 @@ defaults:
       share: false
       comments: false
 
-
 include:
   - _pages
 
 author:
-  name: "Camilo Pedraza Jiménez"
-  avatar: "/assets/img/yo_zoom.png"   # optional
+  name: "Camilo Pedraza Jim&eacute;nez"
+  avatar: "/assets/img/yo_zoom.png"
   bio: |
     PhD researcher in Computational Social Science.
 
@@ -52,6 +50,3 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/cpj97"
-
-
-# Navigation (points to _data/navigation.yml)

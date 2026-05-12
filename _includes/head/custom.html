@@ -5,39 +5,52 @@
 <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // 1. Apply saved theme on load
-    const saved = localStorage.getItem("theme") || "light";
-    document.body.classList.add("theme-" + saved);
+  (function () {
+    var storedTheme = null;
 
-    // 2. Wire up the toggle element (no inline onclick)
-    const toggle = document.querySelector(".theme-toggle");
-    if (!toggle) return;
-
-    function flipTheme() {
-      const body = document.body;
-      const isDark = body.classList.contains("theme-dark");
-
-      if (isDark) {
-        body.classList.remove("theme-dark");
-        body.classList.add("theme-light");
-        localStorage.setItem("theme", "light");
-      } else {
-        body.classList.remove("theme-light");
-        body.classList.add("theme-dark");
-        localStorage.setItem("theme", "dark");
-      }
+    try {
+      storedTheme = localStorage.getItem("theme");
+    } catch (error) {
+      storedTheme = null;
     }
 
-    toggle.addEventListener("click", flipTheme);
-    toggle.addEventListener("keypress", function (e) {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        flipTheme();
+    var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var theme = storedTheme || (prefersDark ? "dark" : "light");
+
+    document.documentElement.classList.remove("theme-light", "theme-dark");
+    document.documentElement.classList.add("theme-" + theme);
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.classList.remove("theme-light", "theme-dark");
+      document.body.classList.add("theme-" + theme);
+
+      var toggle = document.querySelector(".theme-toggle");
+      if (!toggle) return;
+
+      function syncToggle(nextTheme) {
+        var isDark = nextTheme === "dark";
+        toggle.setAttribute("aria-pressed", String(isDark));
+        toggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
       }
+
+      function setTheme(nextTheme) {
+        document.documentElement.classList.remove("theme-light", "theme-dark");
+        document.body.classList.remove("theme-light", "theme-dark");
+        document.documentElement.classList.add("theme-" + nextTheme);
+        document.body.classList.add("theme-" + nextTheme);
+        try {
+          localStorage.setItem("theme", nextTheme);
+        } catch (error) {
+          // Theme still changes for the current page view.
+        }
+        syncToggle(nextTheme);
+      }
+
+      syncToggle(theme);
+      toggle.addEventListener("click", function () {
+        var isDark = document.documentElement.classList.contains("theme-dark");
+        setTheme(isDark ? "light" : "dark");
+      });
     });
-  });
+  })();
 </script>
-
-
-
