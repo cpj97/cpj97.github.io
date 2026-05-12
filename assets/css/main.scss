@@ -224,6 +224,12 @@ body.theme-dark .cv-frame {
   flex: 1; /* links take left space, toggle sits on the right */
 }
 
+.masthead__theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
 /* -------------------------------------------------
    Pill-style theme toggle (in masthead)
    ------------------------------------------------- */
@@ -235,7 +241,7 @@ body.theme-dark .cv-frame {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  margin-left: 1.5rem; /* space from last nav item */
+  margin-left: 1.5rem;
 }
 
 .theme-toggle:focus-visible {

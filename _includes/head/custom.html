@@ -14,8 +14,11 @@
       storedTheme = null;
     }
 
-    var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    var theme = storedTheme || (prefersDark ? "dark" : "light");
+    if (storedTheme !== "dark" && storedTheme !== "light") {
+      storedTheme = null;
+    }
+
+    var theme = storedTheme || "light";
 
     document.documentElement.classList.remove("theme-light", "theme-dark");
     document.documentElement.classList.add("theme-" + theme);
@@ -31,6 +34,7 @@
         var isDark = nextTheme === "dark";
         toggle.setAttribute("aria-pressed", String(isDark));
         toggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+        toggle.setAttribute("title", isDark ? "Switch to light mode" : "Switch to dark mode");
       }
 
       function setTheme(nextTheme) {
