@@ -11,7 +11,8 @@ My current research focuses on deforestation and agricultural change in Colombia
 - **Contact:** [C.Pedraza-Jimenez@phd.hertie-school.org](mailto:C.Pedraza-Jimenez@phd.hertie-school.org)
 
 ### Current Positions
+
 - September 2025 - PhD Researcher at the [Hertie School](https://www.hertie-school.org/en/).
-- January 2026 - Teaching Assistant at the [Hertie School].
+- January 2026 - Teaching Assistant at the Hertie School.
 
 > Special thanks to [Sof&iacute;a Garc&iacute;a-Durrer](https://www.linkedin.com/in/sofia-garcia-durrer/) for the profile pic!
